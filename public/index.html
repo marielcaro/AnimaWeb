@@ -1,89 +1,248 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <!-- === BOX ICONS ==== -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.9.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.9.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.9.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.9.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.9.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.9.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.9.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.9.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.9.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.9.1/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- === CARRROUSEL RECURSOS ==== -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js" type="text/javascript" charset="utf-8"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- ====== CSS ======= -->
+    <link rel="stylesheet" href="css\styles.css">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <title>Ánima Software</title>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <!-- ====== jquery ======= -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- ====== HEADER ======= -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"> Ánima Software</a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i> </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i> </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"> <a href="#about" class="nav__link">Sobre Nosotros</a></li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link ">Portfolio</a></li>
+                    <li class="nav__item "> <a href="#contact " class="nav__link ">Contáctanos</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main ">
+        <!-- ====== HOME ======= -->
+        <section class="home" id="home">
+            <div class="home__container bd-grid ">
+                <div class="home__img ">
+                    <img src="img/mundus.png " alt=" " data-speed="-2 " class="move ">
+                </div>
+
+                <div class="home__data ">
+                    <!-- <h1 class="home__title ">Ánima Software <br> Corporation</h1> -->
+                    <img class="home__logo" src="img/AnimaLogo-Ap-FNaranja.png" alt="">
+                    <p class="home__description "> Tecnología Disruptiva y de Calidad</p>
+                    <a href="# " class="home__button ">Comienza Ahora</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====== ABOUT ======= -->
+        <section class="about" id="about">
+            <div class="about__container">
+                <div class="row-head">
+                    <div class="column-head">
+
+                        <h2 class="about__head">Sobre Nosotros</h2>
+                        <div class="banner"></div>
+                    </div>
+                </div>
+
+                <div class="row-text">
+                    <div class="column-text">
+                        <div class="about__data">
+                            <div class="icon"><i class='bx bx-home-smile'></i></div>
+                            <h3 class="about__title"> Nuestra Misión </h3>
+                            <p class="about__description">Llevar la tecnología y el software a todos los rincones </p>
+
+                        </div>
+                    </div>
+                    <div class="column-text">
+                        <div class="about__data">
+                            <div class="icon"><i class='bx bxs-pyramid'></i></div>
+                            <h3 class="about__title"> Nuestra Esencia </h3>
+                            <p class="about__description">Creatividad, Empatía y Compromiso por el bien común usando la tecnología </p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-text">
+                    <div class="column-text">
+                        <div class="about__data">
+                            <div class="icon"><i class='bx bxs-spa'></i></div>
+                            <h3 class="about__title"> Nuestra Promesa </h3>
+                            <p class="about__description">Ayudar a la Sociedad a mejorar su calidad de vida mediante la tecnología </p>
+
+
+                        </div>
+                    </div>
+                    <div class="column-text">
+                        <div class="about__data">
+                            <div class="icon"><i class='bx bx-happy-beaming'></i></div>
+                            <h3 class="about__title"> Nuestra Vibración </h3>
+                            <p class="about__description">En armonía con el mundo y con el ecosistema </p>
+
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ====== PORTFOLIO ======= -->
+        <section class="portfolio" id="skills">
+            <div class="portfolio__container">
+                <div class="row-head">
+                    <div class="column-head">
+
+                        <h2 class="portfolio__head">Portfolio</h2>
+                        <div class="banner"></div>
+                    </div>
+                </div>
+
+                <div class="portfolio__carousel">
+
+                    <!-- Flickity HTML init -->
+                    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact__container">
+                <div class="row-head">
+                    <div class="column-head">
+
+                        <h2 class="portfolio__head">Contáctanos</h2>
+                        <div class="banner"></div>
+                    </div>
+                </div>
+
+                <div class="redes__sociales">
+                    <h3 class="redes__head">Seguinos en Nuestras Redes Sociales</h3>
+                    <div class="links__redes">
+                        <div class="facebook"> <i class='bx bxl-facebook-circle'></i> <a href="http://www.facebook.com"> Facebook </a> </div>
+                        <div class="instagram"><i class='bx bxl-instagram'></i> <a href="https://www.instagram.com/?hl=es"> Instagram </a> </div>
+                        <div class="phone"><i class='bx bx-phone'></i> +54 9 385 433 8118</div>
+                        <div class="ubicacion"><i class='bx bxs-map'></i> Vuelta de la Barranca, Santiago del Estero, Argentina</div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="contact__form">
+                    <div class="container">
+                        <form class="form-inline" method="POST" name="emailform" action="enviar.php">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fname">Nombre Completo</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="fname" required="required" name="nombre" placeholder="Tu Nombre..">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Correo electrónico</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="email" name="email" required="required" placeholder="ejemplo@tucorreo.com">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="subject">Consulta</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="subject" name="mensaje" required="required" placeholder="Escribí aquí tu consulta, estamos aquí para ayudarte" style="height:200px"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="submit" name="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Ánima Software © 2021, Todos los derechos reservados</p>
+        </footer>
+
+    </main>
+
+    <!-- ====== GSAP ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js "></script>
+
+
+    <!-- ====== MAIN JS ======= -->
+    <script src="js/main.js "></script>
+    <script src="js/firebase.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.9.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+
+</body>
+
 </html>
