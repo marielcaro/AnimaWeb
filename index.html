@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- === BOX ICONS ==== -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- === CARRROUSEL RECURSOS ==== -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- ====== CSS ======= -->
+    <link rel="stylesheet" href="css\styles.css">
+
+    <title>Ánima Software</title>
+
+    <!-- ====== jquery ======= -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+
+    <!-- ====== HEADER ======= -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"> Ánima Software</a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i> </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i> </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"> <a href="#about" class="nav__link">Sobre Nosotros</a></li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link ">Portfolio</a></li>
+                    <li class="nav__item "> <a href="#contact " class="nav__link ">Contáctanos</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main ">
+        <!-- ====== HOME ======= -->
+        <section class="home" id="home">
+            <div class="home__container bd-grid ">
+                <div class="home__img ">
+                    <img src="img/mundus.png " alt=" " data-speed="-2 " class="move ">
+                </div>
+
+                <div class="home__data ">
+                    <!-- <h1 class="home__title ">Ánima Software <br> Corporation</h1> -->
+                    <img class="home__logo" src="img/AnimaLogo-Ap-FNaranja.png" alt="">
+                    <p class="home__description "> Tecnología Disruptiva y de Calidad</p>
+                    <a href="# " class="home__button ">Comienza Ahora</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====== ABOUT ======= -->
+        <section class="about" id="about">
+            <div class="about__container">
+                <div class="row-head">
+                    <div class="column-head">
+
+                        <h2 class="about__head">Sobre Nosotros</h2>
+                        <div class="banner"></div>
+                    </div>
+                </div>
+
+                <div class="row-text">
+                    <div class="column-text">
+                        <div class="about__data">
+                            <div class="icon"><i class='bx bx-home-smile'></i></div>
+                            <h3 class="about__title"> Nuestra Misión </h3>
+                            <p class="about__description">Llevar la tecnología y el software a todos los rincones </p>
+
+                        </div>
+                    </div>
+                    <div class="column-text">
+                        <div class="about__data">
+                            <div class="icon"><i class='bx bxs-pyramid'></i></div>
+                            <h3 class="about__title"> Nuestra Esencia </h3>
+                            <p class="about__description">Creatividad, Empatía y Compromiso por el bien común usando la tecnología </p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-text">
+                    <div class="column-text">
+                        <div class="about__data">
+                            <div class="icon"><i class='bx bxs-spa'></i></div>
+                            <h3 class="about__title"> Nuestra Promesa </h3>
+                            <p class="about__description">Ayudar a la Sociedad a mejorar su calidad de vida mediante la tecnología </p>
+
+
+                        </div>
+                    </div>
+                    <div class="column-text">
+                        <div class="about__data">
+                            <div class="icon"><i class='bx bx-happy-beaming'></i></div>
+                            <h3 class="about__title"> Nuestra Vibración </h3>
+                            <p class="about__description">En armonía con el mundo y con el ecosistema </p>
+
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ====== PORTFOLIO ======= -->
+        <section class="portfolio" id="skills">
+            <div class="portfolio__container">
+                <div class="row-head">
+                    <div class="column-head">
+
+                        <h2 class="portfolio__head">Portfolio</h2>
+                        <div class="banner"></div>
+                    </div>
+                </div>
+
+                <div class="portfolio__carousel">
+
+                    <!-- Flickity HTML init -->
+                    <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                        <div class="gallery-cell">
+                            <img src="img/desk.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact__container">
+                <div class="row-head">
+                    <div class="column-head">
+
+                        <h2 class="portfolio__head">Contáctanos</h2>
+                        <div class="banner"></div>
+                    </div>
+                </div>
+
+                <div class="redes__sociales">
+                    <h3 class="redes__head">Seguinos en Nuestras Redes Sociales</h3>
+                    <div class="links__redes">
+                        <div class="facebook"> <i class='bx bxl-facebook-circle'></i> <a href="http://www.facebook.com"> Facebook </a> </div>
+                        <div class="instagram"><i class='bx bxl-instagram'></i> <a href="https://www.instagram.com/?hl=es"> Instagram </a> </div>
+                        <div class="phone"><i class='bx bx-phone'></i> +54 9 385 433 8118</div>
+                        <div class="ubicacion"><i class='bx bxs-map'></i> Vuelta de la Barranca, Santiago del Estero, Argentina</div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="contact__form">
+                    <div class="container">
+                        <form method="POST" name="emailform" action="enviar.php">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fname">Nombre Completo</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="fname" required="required" name="nombre" placeholder="Tu Nombre..">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Correo electrónico</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="email" name="email" required="required" placeholder="ejemplo@tucorreo.com">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="subject">Consulta</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="subject" name="mensaje" required="required" placeholder="Escribí aquí tu consulta, estamos aquí para ayudarte" style="height:200px"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="submit" name="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Ánima Software © 2021, Todos los derechos reservados</p>
+        </footer>
+
+    </main>
+
+    <!-- ====== GSAP ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js "></script>
+
+
+    <!-- ====== MAIN JS ======= -->
+    <script src="js/main.js "></script>
+</body>
+
+</html>
